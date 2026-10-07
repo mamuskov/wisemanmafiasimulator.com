@@ -37,39 +37,61 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="apple-itunes-app" content="app-id=6785118514">
 <link rel="icon" href="/assets/icon-192.png">
+<meta name="theme-color" content="#2A0811">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"WiseMan - Mafia Life Simulator","description":"Text life simulator & mafia roleplay. One choice a year: loyalty or betrayal.","url":"https://wisemanmafiasimulator.com/en/","inLanguage":"en","image":"https://wisemanmafiasimulator.com/assets/og/en.jpg","genre":["Simulation","Role-playing"],"gamePlatform":["iOS","Android"],"operatingSystem":"iOS, Android","applicationCategory":"GameApplication","author":{"@type":"Person","name":"Mahmut Akyol"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"sameAs":["https://apps.apple.com/app/id6785118514","https://play.google.com/store/apps/details?id=com.mamuskov.wiseman","https://appgallery.huawei.com/app/C118840135"]}</script>
 <style>
-:root{--bg:#15110E;--card:#1E1914;--gold:#D9A928;--text:#F4F1EA;--dim:#A9A49B;--line:#3A3328}
+/* Bordo zemin (kullanıcı, 7 Eki 2026) — mafya yolunun rengi #B03A4B'nin
+   koyusu; altın #D9A928 imza vurgu. Yazı tipi oyunun kendisi: Philosopher
+   (theme.js DEFAULT_FONT). Görseller 9:16; oran CSS'te KORUNUR — eskiden
+   width/height öznitelikleri CSS'le çakışıp görseli geriyordu (340×960). */
+:root{--bg:#2A0811;--bg2:#4B0E1F;--accent:#B03A4B;--card:rgba(255,236,220,.06);--gold:#D9A928;--gold2:#F0C75A;--text:#F8EEE6;--dim:#DCC2B8;--line:rgba(255,220,200,.16)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:'Lora',system-ui,-apple-system,'Segoe UI','Noto Sans',sans-serif;line-height:1.65}
-a{color:var(--gold)}
-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;max-width:1040px;margin:0 auto}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-family:'Cinzel',serif;font-weight:800;letter-spacing:2px}
-.brand img{width:36px;height:36px;border-radius:9px}
-select{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font:inherit;max-width:46vw}
-.hero{max-width:1040px;margin:0 auto;padding:28px 16px 8px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
-h1{font-family:'Cinzel',serif;font-weight:800;font-size:clamp(28px,5vw,46px);line-height:1.15;margin:0 0 12px}
-.lead{color:var(--dim);font-size:18px;margin:0 0 22px}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--text);font-family:'Philosopher',Georgia,'Noto Serif',serif;line-height:1.6;font-size:17px;
+  background:radial-gradient(1200px 700px at 78% -10%,rgba(176,58,75,.55),transparent 60%),radial-gradient(900px 600px at -10% 30%,rgba(120,20,40,.45),transparent 60%),linear-gradient(180deg,#3A0C18 0%,var(--bg) 45%,#1C050B 100%);background-attachment:fixed}
+a{color:var(--gold2)}
+img{max-width:100%;height:auto;display:block}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;max-width:1080px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:700;letter-spacing:3px;font-size:18px}
+.brand img{width:38px;height:38px;border-radius:10px;box-shadow:0 0 0 1px var(--line)}
+select{background:rgba(0,0,0,.25);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font:inherit;font-size:15px;max-width:46vw}
+select option{color:#111}
+.hero{max-width:1080px;margin:0 auto;padding:28px 16px 12px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:36px;align-items:center}
+h1{font-weight:700;font-size:clamp(30px,5.2vw,52px);line-height:1.12;margin:0 0 14px;letter-spacing:.5px;text-wrap:balance}
+.lead{color:var(--dim);font-size:19px;margin:0 0 24px}
 .stores{display:flex;flex-wrap:wrap;gap:10px}
-.store{display:inline-flex;align-items:center;gap:10px;padding:11px 16px;border-radius:12px;border:1px solid var(--gold);color:var(--text);text-decoration:none;font-weight:600;background:var(--card)}
-.store:first-child{background:var(--gold);color:#231a05}
-.store svg{width:20px;height:20px;fill:currentColor}
-.hero img{width:100%;max-width:340px;justify-self:center;border-radius:22px;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.store{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:14px;border:1px solid rgba(217,169,40,.7);color:var(--text);text-decoration:none;font-weight:700;background:rgba(0,0,0,.22);transition:transform .15s ease,background .15s ease}
+.store:hover{transform:translateY(-1px);background:rgba(217,169,40,.12)}
+.store:first-child{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#2A1A02;border-color:transparent}
+.store svg{width:20px;height:20px;fill:currentColor;flex:none}
+.phone{justify-self:center;width:100%;max-width:300px;aspect-ratio:9/16;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 8px rgba(0,0,0,.25)}
+.phone img{width:100%;height:100%;object-fit:cover}
 #lang-suggest[hidden]{display:none}
 #lang-suggest{display:inline-block;margin:6px 16px 0;padding:6px 12px;border:1px dashed var(--gold);border-radius:999px;text-decoration:none}
-.shots{max-width:1040px;margin:30px auto 0;padding:0 16px}
-.shots h2,.about h2{font-family:'Cinzel',serif;color:var(--gold);font-size:15px;letter-spacing:1.6px;text-transform:uppercase;margin:0 0 12px}
-.strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
-.strip img{height:420px;max-height:70vh;border-radius:16px;border:1px solid var(--line);scroll-snap-align:start;flex:none}
-.about{max-width:760px;margin:36px auto 0;padding:0 16px}
-.about section{margin-top:26px}
+.shots{max-width:1080px;margin:36px auto 0;padding:0 16px}
+h2{color:var(--gold2);font-size:15px;letter-spacing:2px;text-transform:uppercase;margin:0 0 14px;font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px}
+.gallery figure{margin:0;aspect-ratio:9/16;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:rgba(0,0,0,.25);box-shadow:0 14px 40px rgba(0,0,0,.4)}
+.gallery img{width:100%;height:100%;object-fit:cover}
+.about{max-width:780px;margin:44px auto 0;padding:0 16px}
+.about section{margin-top:28px;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.about section h2{margin-bottom:6px}
 .about p{margin:12px 0}
-footer{max-width:760px;margin:48px auto 0;padding:24px 16px 40px;border-top:1px solid var(--line);color:var(--dim);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 18px}
+footer{max-width:780px;margin:52px auto 0;padding:24px 16px 44px;border-top:1px solid var(--line);color:var(--dim);font-size:15px;display:flex;flex-wrap:wrap;gap:8px 18px}
 footer a{color:var(--dim)}
-@media (max-width:760px){.hero{grid-template-columns:1fr}.hero img{max-width:260px}.strip img{height:360px}}
+@media (max-width:760px){
+  body{font-size:16px;background-attachment:scroll}
+  .hero{grid-template-columns:1fr;gap:26px;padding-top:12px;text-align:left}
+  .phone{max-width:240px;border-radius:22px}
+  .lead{font-size:17px}
+  .store{flex:1 1 auto;justify-content:center}
+  /* Telefonda yatay kaydırma: her görsel ekranın ~%62'si, oran korunur */
+  .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:0 16px 12px;-webkit-overflow-scrolling:touch}
+  .gallery figure{flex:0 0 62vw;max-width:260px;scroll-snap-align:center}
+}
 </style>
 </head>
 <body>
@@ -89,11 +111,11 @@ footer a{color:var(--dim)}
       <a class="store" href="https://appgallery.huawei.com/app/C118840135"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zm2.5 5a3.5 3.5 0 0 0 7 0h-1.4a2.1 2.1 0 0 1-4.2 0z"/></svg>AppGallery</a>
     </div>
   </div>
-  <img src="/assets/shots/en-01.webp" alt="WiseMan - Mafia Life Simulator" width="540" height="960">
+  <div class="phone"><img src="/assets/shots/en-01.webp" alt="WiseMan - Mafia Life Simulator" width="540" height="960" fetchpriority="high"></div>
 </div>
 <div class="shots">
   <h2>Screenshots</h2>
-  <div class="strip"><img loading="lazy" src="/assets/shots/en-02.webp" alt="WiseMan - Mafia Life Simulator 2" width="540" height="960"><img loading="lazy" src="/assets/shots/en-03.webp" alt="WiseMan - Mafia Life Simulator 3" width="540" height="960"><img loading="lazy" src="/assets/shots/en-04.webp" alt="WiseMan - Mafia Life Simulator 4" width="540" height="960"><img loading="lazy" src="/assets/shots/en-05.webp" alt="WiseMan - Mafia Life Simulator 5" width="540" height="960"><img loading="lazy" src="/assets/shots/en-06.webp" alt="WiseMan - Mafia Life Simulator 6" width="540" height="960"><img loading="lazy" src="/assets/shots/en-07.webp" alt="WiseMan - Mafia Life Simulator 7" width="540" height="960"></div>
+  <div class="gallery"><figure><img loading="lazy" decoding="async" src="/assets/shots/en-02.webp" alt="WiseMan - Mafia Life Simulator 2" width="540" height="960"></figure><figure><img loading="lazy" decoding="async" src="/assets/shots/en-03.webp" alt="WiseMan - Mafia Life Simulator 3" width="540" height="960"></figure><figure><img loading="lazy" decoding="async" src="/assets/shots/en-04.webp" alt="WiseMan - Mafia Life Simulator 4" width="540" height="960"></figure><figure><img loading="lazy" decoding="async" src="/assets/shots/en-05.webp" alt="WiseMan - Mafia Life Simulator 5" width="540" height="960"></figure><figure><img loading="lazy" decoding="async" src="/assets/shots/en-06.webp" alt="WiseMan - Mafia Life Simulator 6" width="540" height="960"></figure><figure><img loading="lazy" decoding="async" src="/assets/shots/en-07.webp" alt="WiseMan - Mafia Life Simulator 7" width="540" height="960"></figure></div>
 </div>
 <article class="about">
 <p>WiseMan is a text-based life simulator and mafia game. Play a crime simulator or an honest career: this choice-driven text RPG lets you roleplay a whole life, and every one of your life choices leaves a mark years later.</p>

@@ -1,0 +1,83 @@
+# WiseMan: Mafia Life Simulator
+
+> WiseMan is a free, text-based mafia life simulator for iPhone, iPad and Android. You live one life year by year: every year brings one choice, and the game remembers it and brings it back years later. It is available in 22 languages, works offline and needs no account.
+
+## At a glance
+- Genre: Text-based life simulator and mafia RPG
+- Platforms: iPhone and iPad (iOS 15.1 or later), Android, Huawei AppGallery
+- Price: Free to play. Optional in-app purchases and rewarded ads; ads can be removed for good
+- Languages: 22: English, Turkish, German, French, Spanish, Italian, Portuguese, Russian, Arabic, Hindi, Japanese, Korean, Chinese (Simplified and Traditional), Danish, Swedish, Norwegian, Dutch, Polish, Romanian, Indonesian, Thai
+- Offline: Yes. Your save lives on your phone; no account or sign-up
+- Setting: Born anywhere: more than 250 countries and regions
+- Released: July 23, 2026 (App Store)
+- Developer: Mahmut Akyol
+
+## Description
+WiseMan is a mafia simulator and a text-based life simulator you can play offline. Rise from street kid to crime boss, or build an honest career: in this choice-driven mafia RPG every decision leaves a mark years later.
+
+You are born with nothing — a name, a country, and a family you did not choose. From there, one year at a time, you decide who you become.
+
+WiseMan is a life simulator. The street is one road, not the only one. You can stay in school and become a doctor. You can open a shop and turn it into a holding company. You can run for office. Or you can take the other door, and find out what it costs.
+
+ONE CHOICE A YEAR
+Every year hands you a card. A friend needs an alibi. Your father calls for money. A stranger offers you work you shouldn't take. There is no right answer — only the answer you can live with, and the years that follow it.
+
+WHAT YOU CHOOSE COMES BACK
+A choice is not a number. Take the blame for someone today and, six years from now, a door opens that was closed to everyone else. Look away, and someone remembers. The game keeps your record and reads it back to you.
+
+THE INFLUENCE LADDER
+Street, money, office and name — four pillars, one score, seven rungs, from Kid of the Block to Legend. The top rungs do not fit inside a single life: a dynasty needs a second generation, a legend a third.
+
+TAKE THE CITY, DISTRICT BY DISTRICT
+Join a crime family and the city opens up as a map: port, bazaar, casino street, industrial zone, suburbs. Each district asks for rank, respect, fear and a crew. Move in, station your men, collect tribute every 48 hours — and when a rival gang contests your turf, decide whether it's worth a war.
+
+A WHOLE LIFE, NOT A MENU
+Fall in love, marry, raise children, lose people. Study, work, get promoted, get fired. Buy a car, a shop, a house, a ship. Get sick, get old. Chronic illness does not go away — you manage it, and pay for it, for the rest of your life. Prison changes what people will do with you afterwards.
+
+WHEN YOU DIE, IT ISN'T OVER
+Your child inherits your name, your debts and your reputation. The Dynasty Book records the peak of every life — not the moment you died, but the highest you ever stood.
+
+BORN ANYWHERE
+Pick from over 250 countries and regions. Where you are born changes the names around you, the money in the house, the schools, the work, and the roads open to you.
+
+22 LANGUAGES
+Written for each language, not run through a translator.
+
+If you like mafia games, gangster stories, crime simulators and text-based RPGs, WiseMan puts them all in one offline life: the family, the street, the money, the law and the choices you cannot take back.
+
+Free to play. Optional purchases and rewarded ads; you can remove ads for good. No account, no sign-up. Your save lives on your phone and the game works offline.
+
+## Frequently asked questions
+### What is WiseMan?
+WiseMan is a free, text-based mafia life simulator for iPhone, iPad and Android. You live one life year by year: every year hands you a choice card, and the game remembers what you chose and brings it back years later. You can build an honest career or join a crime family.
+
+### Is WiseMan free?
+Yes. WiseMan is free to play. It has optional in-app purchases and rewarded ads, and you can remove ads for good. There is no account and no sign-up.
+
+### Does WiseMan work offline?
+Yes. Your save lives on your phone and the game works offline.
+
+### Where can I play WiseMan?
+WiseMan is available on the App Store for iPhone and iPad (iOS 15.1 or later), on Google Play for Android, and on Huawei AppGallery.
+
+### Can I play as a mafia boss in WiseMan?
+Yes, if you take that road. Join a crime family and the city opens up as a map of districts: port, bazaar, casino street, industrial zone and suburbs. Each district asks for rank, respect, fear and a crew. You collect tribute every 48 hours and decide when a rival gang is worth a war. The street is one road, not the only one: you can also study, run a business or run for office.
+
+### How does the influence ladder work?
+Street, money, office and name are the four pillars. Together they make one score with seven rungs, from Kid of the Block to Legend. The top rungs do not fit inside a single life: a dynasty needs a second generation, a legend a third.
+
+### What happens when my character dies?
+Your child inherits your name, your debts and your reputation, and you play on as them. The Dynasty Book records the peak of every life: not the moment you died, but the highest you ever stood.
+
+### How many countries and languages does WiseMan have?
+You can be born in more than 250 countries and regions, and where you are born changes the names around you, the money in the house, the schools, the work and the roads open to you. The game is written for 22 languages, not run through a translator.
+
+### Who makes WiseMan, and when was it released?
+WiseMan is made by Mahmut Akyol. It was released on the App Store on July 23, 2026.
+
+## Links
+- Site: https://wisemanmafiasimulator.com/
+- App Store: https://apps.apple.com/app/id6785118514
+- Google Play: https://play.google.com/store/apps/details?id=com.mamuskov.wiseman
+- Huawei AppGallery: https://appgallery.huawei.com/app/C118840135
+- Contact: founder@wisemanmafiasimulator.com

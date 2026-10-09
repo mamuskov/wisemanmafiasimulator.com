@@ -1,0 +1,48 @@
+# WiseMan: Mafia Life Simulator
+
+> WiseMan is a free, text-based mafia life simulator for iPhone, iPad and Android. You live one life year by year: every year brings one choice, and the game remembers it and brings it back years later. It is available in 22 languages, works offline and needs no account.
+
+- Genre: Text-based life simulator and mafia RPG
+- Platforms: iPhone and iPad (iOS 15.1 or later), Android, Huawei AppGallery
+- Price: Free to play. Optional in-app purchases and rewarded ads; ads can be removed for good
+- Languages: 22: English, Turkish, German, French, Spanish, Italian, Portuguese, Russian, Arabic, Hindi, Japanese, Korean, Chinese (Simplified and Traditional), Danish, Swedish, Norwegian, Dutch, Polish, Romanian, Indonesian, Thai
+- Offline: Yes. Your save lives on your phone; no account or sign-up
+- Setting: Born anywhere: more than 250 countries and regions
+- Released: July 23, 2026 (App Store)
+- Developer: Mahmut Akyol
+
+## Get the game
+- [App Store](https://apps.apple.com/app/id6785118514): iPhone and iPad
+- [Google Play](https://play.google.com/store/apps/details?id=com.mamuskov.wiseman): Android
+- [Huawei AppGallery](https://appgallery.huawei.com/app/C118840135): Huawei devices
+
+## Site
+- [Home (English)](https://wisemanmafiasimulator.com/): description, screenshots, at-a-glance facts and FAQ
+- [Türkçe](https://wisemanmafiasimulator.com/tr/): the same in Turkish, with FAQ
+- [Privacy Policy](https://mamuskov.github.io/wiseman-legal/privacy.html)
+- [Support](https://mamuskov.github.io/wiseman-legal/)
+
+## Other languages
+- [Deutsch](https://wisemanmafiasimulator.com/de/)
+- [Français](https://wisemanmafiasimulator.com/fr/)
+- [Español](https://wisemanmafiasimulator.com/es/)
+- [Italiano](https://wisemanmafiasimulator.com/it/)
+- [Português](https://wisemanmafiasimulator.com/pt/)
+- [Русский](https://wisemanmafiasimulator.com/ru/)
+- [العربية](https://wisemanmafiasimulator.com/ar/)
+- [हिन्दी](https://wisemanmafiasimulator.com/hi/)
+- [日本語](https://wisemanmafiasimulator.com/ja/)
+- [한국어](https://wisemanmafiasimulator.com/ko/)
+- [中文（简体）](https://wisemanmafiasimulator.com/zh/)
+- [中文（繁體）](https://wisemanmafiasimulator.com/zh-tw/)
+- [Dansk](https://wisemanmafiasimulator.com/da/)
+- [Svenska](https://wisemanmafiasimulator.com/sv/)
+- [Norsk](https://wisemanmafiasimulator.com/no/)
+- [Nederlands](https://wisemanmafiasimulator.com/nl/)
+- [Polski](https://wisemanmafiasimulator.com/pl/)
+- [Română](https://wisemanmafiasimulator.com/ro/)
+- [Bahasa Indonesia](https://wisemanmafiasimulator.com/id/)
+- [ไทย](https://wisemanmafiasimulator.com/th/)
+
+## Optional
+- [llms-full.txt](https://wisemanmafiasimulator.com/llms-full.txt): the English page and FAQ as one plain-text file

@@ -1,4 +1,27 @@
 User-agent: *
 Allow: /
 
+# Search discovery and AI answer engines (Google, Bing, Apple, OpenAI, Anthropic, Perplexity)
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: OAI-SearchBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+Allow: /
+
+# User-triggered fetchers (a person asks an assistant to read a page)
+User-agent: ChatGPT-User
+User-agent: Claude-User
+User-agent: Perplexity-User
+Allow: /
+
+# Model training and Gemini grounding (allowed on purpose; use Disallow: / to opt out)
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://wisemanmafiasimulator.com/sitemap.xml

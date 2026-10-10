@@ -15,8 +15,48 @@ section{margin:16px 0;padding:16px 18px;border:1px solid var(--line);border-radi
 table{width:100%;border-collapse:collapse;margin:14px 0}th,td{border-bottom:1px solid var(--line);padding:9px 6px;text-align:start;vertical-align:top}th{color:var(--gold2)}small{color:var(--dim)}
 dl.list dt{font-weight:700;margin-top:14px;color:var(--text)}dl.list dd{margin:2px 0 0;color:var(--dim)}
 footer{margin-top:30px;padding:22px 16px 40px;border-top:1px solid var(--line);color:var(--dim);font-size:14px;display:flex;flex-wrap:wrap;gap:6px 14px}footer a{color:var(--dim)}
-@media (max-width:640px){body{font-size:16px}th,td{padding:8px 4px}}</style></head>
-<body><header><a class="brand" href="/zh/">WISEMAN</a><a href="/zh/">下载</a></header>
+@media (max-width:640px){body{font-size:16px}th,td{padding:8px 4px}}
+.gun{position:relative;width:62px;height:40px;border:0;background:none;padding:0;cursor:pointer;color:var(--gold2,#F0C75A);-webkit-tap-highlight-color:transparent;flex:none}
+.gun .g{position:relative;display:block;width:62px;height:40px}
+.gun svg{width:58px;height:36px;display:block;margin:2px 0 0 4px;transform-origin:75% 70%;filter:drop-shadow(0 2px 4px rgba(0,0,0,.45))}
+.gun:hover svg{transform:rotate(-4deg)}
+.gun:focus-visible{outline:2px solid var(--gold2,#F0C75A);outline-offset:3px;border-radius:10px}
+.gun .flash{position:absolute;left:-14px;top:3px;width:26px;height:26px;opacity:0;pointer-events:none;background:radial-gradient(circle,#fff8d2 0,#ffd257 32%,#ff7a1a 58%,transparent 72%);clip-path:polygon(50% 0,60% 34%,100% 50%,60% 66%,50% 100%,40% 66%,0 50%,40% 34%)}
+.gun .bullet{position:absolute;left:-2px;top:13px;width:10px;height:4px;border-radius:2px;background:linear-gradient(90deg,#f0c75a,#a8740b);opacity:0;pointer-events:none}
+.gun.fire svg{animation:wm-recoil .3s ease-out}
+.gun.fire .flash{animation:wm-flash .24s ease-out}
+.gun.fire .bullet{animation:wm-bullet .5s cubic-bezier(.15,.7,.3,1)}
+@keyframes wm-recoil{0%{transform:none}25%{transform:translateX(7px) rotate(-16deg)}100%{transform:none}}
+@keyframes wm-flash{0%{opacity:0;transform:scale(.3)}25%{opacity:1;transform:scale(1.25)}100%{opacity:0;transform:scale(.6)}}
+@keyframes wm-bullet{0%{opacity:1;transform:translateX(0)}100%{opacity:0;transform:translateX(-220px)}}
+.scrim{position:fixed;inset:0;background:rgba(10,2,5,.55);opacity:0;transition:opacity .22s;z-index:60}
+.scrim.open{opacity:1}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(86vw,340px);overflow-y:auto;padding:58px 22px 30px;background:linear-gradient(180deg,#3A0C18,#1C050B);border-left:1px solid var(--line,rgba(255,220,200,.16));box-shadow:-20px 0 60px rgba(0,0,0,.5);transform:translateX(105%);transition:transform .26s cubic-bezier(.2,.8,.2,1);z-index:61}
+.drawer.open{transform:none}
+.drawer .m-close{position:absolute;top:10px;right:12px;width:40px;height:40px;border:0;background:none;color:var(--text,#F8EEE6);font-size:30px;line-height:1;cursor:pointer}
+.drawer .m-sec{padding:8px 0 12px;border-bottom:1px solid var(--line,rgba(255,220,200,.16))}
+.drawer .m-sec:last-child{border-bottom:0}
+.drawer .m-h{margin:8px 0 4px;color:var(--gold2,#F0C75A);font-size:12px;letter-spacing:2px;text-transform:uppercase}
+.drawer a{display:block;padding:9px 2px;color:var(--text,#F8EEE6);text-decoration:none;font-size:17px}
+.drawer a:hover,.drawer a[aria-current]{color:var(--gold2,#F0C75A)}
+[dir=rtl] .gun .g{transform:scaleX(-1)}
+[dir=rtl] .drawer{right:auto;left:0;border-left:0;border-right:1px solid var(--line,rgba(255,220,200,.16));transform:translateX(-105%)}
+[dir=rtl] .drawer.open{transform:none}
+[dir=rtl] .drawer .m-close{right:auto;left:12px}
+@media (prefers-reduced-motion:reduce){.gun.fire svg,.gun.fire .flash,.gun.fire .bullet{animation:none}.drawer,.scrim{transition:none}}
+</style></head>
+<body><header><a class="brand" href="/zh/">WISEMAN</a><button class="gun" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="site-menu" title="打开菜单"><span class="g"><svg viewBox="0 0 64 40" aria-hidden="true" focusable="false"><path d="M4 9h50a3 3 0 0 1 3 3v6H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2z" fill="currentColor"/><rect x="0" y="11" width="6" height="5" rx="1" fill="currentColor"/><path d="M20 18h30l2 3H22z" fill="currentColor" opacity=".85"/><path d="M38 18h12l4 18a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-1.6L38 18z" fill="currentColor"/><path d="M28 18c0 6 3 9 8 9" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M33 19v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 12h40" stroke="#2A0811" stroke-width="1" opacity=".35"/><circle cx="46" cy="28" r="1.2" fill="#2A0811" opacity=".5"/></svg><span class="flash"></span><span class="bullet"></span></span></button>
+<div class="scrim" hidden></div>
+<nav class="drawer" id="site-menu" hidden aria-label="打开菜单"><button class="m-close" type="button" aria-label="关闭">×</button><div class="m-sec"><a href="/zh/">首页</a><a href="/zh/wiki/">WiseMan 维基</a></div><div class="m-sec"><p class="m-h">WiseMan 维基</p><a href="/zh/wiki/systems.html">系统</a><a href="/zh/wiki/careers.html">职业</a><a href="/zh/wiki/achievements.html">成就</a><a href="/zh/wiki/activities.html">活动</a><a href="/zh/wiki/stats.html" aria-current="page">属性</a><a href="/zh/wiki/shop.html">商店</a><a href="/zh/wiki/expansions.html">扩展包</a></div><div class="m-sec"><p class="m-h">下载</p><a href="https://play.google.com/store/apps/details?id=com.mamuskov.wiseman" rel="noopener" target="_blank">Google Play</a><a href="https://apps.apple.com/app/id6785118514" rel="noopener" target="_blank">App Store</a><a href="https://appgallery.huawei.com/app/C118840135" rel="noopener" target="_blank">AppGallery</a></div></nav></header>
 <nav class="wiki" aria-label="WiseMan 维基"><a href="/zh/wiki/">WiseMan 维基</a><a href="/zh/wiki/systems.html">系统</a><a href="/zh/wiki/careers.html">职业</a><a href="/zh/wiki/achievements.html">成就</a><a href="/zh/wiki/activities.html">活动</a><a href="/zh/wiki/stats.html" aria-current="page">属性</a><a href="/zh/wiki/shop.html">商店</a><a href="/zh/wiki/expansions.html">扩展包</a></nav>
 <main><h1>属性</h1><p>你角色的属性值范围为0-100。有些属性数值低不好，有些则是数值高不好。</p><dl class="list"><dt id="health">健康</dt><dd>如果降到0,你角色的死亡风险就会增加。疾病、事故和年老会降低它;体检和健康的生活方式会提升它。</dd><dt id="happiness">快乐值</dt><dd>你的总体情绪状态。快乐值过低会导致压力上升和负面事件的发生。</dd><dt id="smarts">智力</dt><dd>影响学业/大学的成功率以及部分工作/职业机会。学习和阅读能提升它。</dd><dt id="looks">颜值</dt><dd>影响约会、社交媒体以及部分职业(演员、模特)。打理仪表和锻炼能提升它。</dd><dt id="strength">力量</dt><dd>影响体力劳动、体育运动以及部分犯罪/打斗事件的结果。健身房能提升它。</dd><dt id="stress">压力</dt><dd>与其他属性不同，这项数值越高越糟糕——压力接近100会降低健康值和快乐值。休息和心理治疗能降低它。</dd><dt id="reputation">名誉</dt><dd>你在社会中的地位(0-100)。犯罪和丑闻会降低它，慈善和成就会提升它。</dd><dt id="education">教育</dt><dd>显示你当前的学业/大学状态。更好的教育能解锁更好的工作机会。</dd><dt id="family">家庭</dt><dd>概括你的子女和家庭状况。可在“家庭”界面管理你的人际关系。</dd><dt id="money">金钱(₺)</dt><dd>通过工作、犯罪和投资获得;用于购物、账单和罚款支出。</dd><dt id="gems">宝石</dt><dd>高级货币——通过观看广告、每日奖励或购买获得;用于兑换商店中的特殊物品。</dd></dl></main>
-<footer><a href="/wiki/stats.html" hreflang="en">en</a><a href="/tr/wiki/stats.html" hreflang="tr">tr</a><a href="/de/wiki/stats.html" hreflang="de">de</a><a href="/fr/wiki/stats.html" hreflang="fr">fr</a><a href="/es/wiki/stats.html" hreflang="es">es</a><a href="/it/wiki/stats.html" hreflang="it">it</a><a href="/pt/wiki/stats.html" hreflang="pt-BR">pt</a><a href="/ru/wiki/stats.html" hreflang="ru">ru</a><a href="/ar/wiki/stats.html" hreflang="ar">ar</a><a href="/hi/wiki/stats.html" hreflang="hi">hi</a><a href="/ja/wiki/stats.html" hreflang="ja">ja</a><a href="/ko/wiki/stats.html" hreflang="ko">ko</a><a href="/zh/wiki/stats.html" hreflang="zh-Hans">• zh</a><a href="/zh-tw/wiki/stats.html" hreflang="zh-Hant">zh-tw</a><a href="/da/wiki/stats.html" hreflang="da">da</a><a href="/sv/wiki/stats.html" hreflang="sv">sv</a><a href="/no/wiki/stats.html" hreflang="nb">no</a><a href="/nl/wiki/stats.html" hreflang="nl">nl</a><a href="/pl/wiki/stats.html" hreflang="pl">pl</a><a href="/ro/wiki/stats.html" hreflang="ro">ro</a><a href="/id/wiki/stats.html" hreflang="id">id</a><a href="/th/wiki/stats.html" hreflang="th">th</a></footer></body></html>
+<footer><a href="/wiki/stats.html" hreflang="en">en</a><a href="/tr/wiki/stats.html" hreflang="tr">tr</a><a href="/de/wiki/stats.html" hreflang="de">de</a><a href="/fr/wiki/stats.html" hreflang="fr">fr</a><a href="/es/wiki/stats.html" hreflang="es">es</a><a href="/it/wiki/stats.html" hreflang="it">it</a><a href="/pt/wiki/stats.html" hreflang="pt-BR">pt</a><a href="/ru/wiki/stats.html" hreflang="ru">ru</a><a href="/ar/wiki/stats.html" hreflang="ar">ar</a><a href="/hi/wiki/stats.html" hreflang="hi">hi</a><a href="/ja/wiki/stats.html" hreflang="ja">ja</a><a href="/ko/wiki/stats.html" hreflang="ko">ko</a><a href="/zh/wiki/stats.html" hreflang="zh-Hans">• zh</a><a href="/zh-tw/wiki/stats.html" hreflang="zh-Hant">zh-tw</a><a href="/da/wiki/stats.html" hreflang="da">da</a><a href="/sv/wiki/stats.html" hreflang="sv">sv</a><a href="/no/wiki/stats.html" hreflang="nb">no</a><a href="/nl/wiki/stats.html" hreflang="nl">nl</a><a href="/pl/wiki/stats.html" hreflang="pl">pl</a><a href="/ro/wiki/stats.html" hreflang="ro">ro</a><a href="/id/wiki/stats.html" hreflang="id">id</a><a href="/th/wiki/stats.html" hreflang="th">th</a></footer><script>
+(function(){var b=document.querySelector('.gun'),d=document.getElementById('site-menu'),s=document.querySelector('.scrim');if(!b||!d)return;
+var calm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function open(){b.classList.remove('fire');void b.offsetWidth;b.classList.add('fire');b.setAttribute('aria-expanded','true');
+setTimeout(function(){d.hidden=false;s.hidden=false;requestAnimationFrame(function(){d.classList.add('open');s.classList.add('open');var f=d.querySelector('a');if(f)f.focus({preventScroll:true});});},calm?0:210);}
+function close(){b.setAttribute('aria-expanded','false');d.classList.remove('open');s.classList.remove('open');setTimeout(function(){d.hidden=true;s.hidden=true;},calm?0:260);b.focus();}
+b.addEventListener('click',function(){b.getAttribute('aria-expanded')==='true'?close():open();});
+s.addEventListener('click',close);d.querySelector('.m-close').addEventListener('click',close);
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.getAttribute('aria-expanded')==='true')close();});})();
+</script></body></html>

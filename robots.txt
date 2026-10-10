@@ -25,3 +25,4 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://wisemanmafiasimulator.com/sitemap.xml
+Sitemap: https://wisemanmafiasimulator.com/wiki-sitemap.xml

@@ -13,7 +13,7 @@
 - Developer: Mahmut Akyol
 
 ## Description
-WiseMan is a mafia simulator and a text-based life simulator you can play offline. Rise from street kid to crime boss, or build an honest career: in this choice-driven mafia RPG every decision leaves a mark years later.
+WiseMan is a text-based mafia life simulator you can play offline. Part mafia boss simulator, part crime life simulator: rise from street kid to mob boss, or build an honest career. In this choice-driven roleplay game, a text RPG, every decision leaves a mark years later.
 
 NEW: YOUR HOUSE, YOUR COLLECTION, YOUR CLUB
 See your house inside and out: your cars in the garage, your boat at the pier. Bid at the daily art auction and hang the painting you win on your wall; its value changes over the years. Pass 10 million and the elite club opens its doors: four members, one deal each, every year.

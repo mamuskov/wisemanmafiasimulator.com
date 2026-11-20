@@ -19,8 +19,8 @@
 ## Site
 - [Home (English)](https://wisemanmafiasimulator.com/): description, screenshots, at-a-glance facts and FAQ
 - [Türkçe](https://wisemanmafiasimulator.com/tr/): the same in Turkish, with FAQ
-- [Privacy Policy](https://mamuskov.github.io/wiseman-legal/privacy.html)
-- [Support](https://mamuskov.github.io/wiseman-legal/)
+- [Privacy Policy](https://wisemanmafiasimulator.com/wiseman-legal/privacy.html)
+- [Support](https://wisemanmafiasimulator.com/wiseman-legal/)
 
 ## Other languages
 - [Deutsch](https://wisemanmafiasimulator.com/de/)
